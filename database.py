@@ -1,0 +1,1 @@
+redshift-cluster-1.c3tbi3dszcm0.eu-west-1.redshift.amazonaws.com:5439/dev

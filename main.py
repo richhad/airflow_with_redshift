@@ -1,5 +1,6 @@
 import logging
 import os
+from pipeline import configuration
 
 # Create logger
 logging.basicConfig(
@@ -13,10 +14,8 @@ def run_pipeline():
         logger.info("Starting pipeline...")
 
         # Get config
-        # config_bucket = os.environ["CONFIG_BUCKET"]
-        # config_file = os.environ["CONFIG_FILE"]
-        # config = configuration.read(config_bucket, config_file)
-
+        secret = configuration.get_secret()
+        print(secret)
         # Create Database
         # database.create_bronze_tables(spark, config)
         # database.create_audit_tables(spark, config)
